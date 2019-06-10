@@ -22,6 +22,7 @@ public class PracticaC implements WindowListener, ActionListener
 	ConsultaOfertasV consultaofertasv=null;
 	AltaAsignacionV altaasignacionv=null;
 	
+	//conexion Base de datos
 	String driver = "com.mysql.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/practicamvc?autoReconnect=true&useSSL=false";
 	String login = "root";
@@ -33,6 +34,7 @@ public class PracticaC implements WindowListener, ActionListener
 	public PracticaC(PracticaV objVista) {
 		this.objVista=objVista;
 		
+		//cargar drive
 		try
 		{
 			Class.forName(driver);
@@ -403,6 +405,13 @@ public class PracticaC implements WindowListener, ActionListener
 					});
 					
 					
+				}
+			});
+			altaasignacionv.btnCancelar.addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					altaasignacionv.setVisible(false);
 				}
 			});
 			

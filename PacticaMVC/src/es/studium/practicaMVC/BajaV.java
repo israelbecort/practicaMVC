@@ -24,7 +24,7 @@ public class BajaV extends JFrame
 	JPanel pnlInf=new JPanel();
 	
 	public BajaV() {
-		setTitle("Modificar Oferta");
+		setTitle("Baja Demandante");
 		setSize(350,200);
 		
 		pnlSup.setLayout(new GridLayout(2,1));

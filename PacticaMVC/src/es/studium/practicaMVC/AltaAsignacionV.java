@@ -27,7 +27,7 @@ public class AltaAsignacionV extends JFrame
 	JPanel pnlInf =new JPanel();
 	
 	public AltaAsignacionV(){
-		setTitle ("Edición Oferta");
+		setTitle ("Alta Asignación");
 		setSize(300,200);
 		//setVisible(true);
 		
