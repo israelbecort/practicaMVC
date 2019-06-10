@@ -15,15 +15,10 @@ public class ConsultaOfertasV extends JFrame
 	private static final long serialVersionUID = 1L;
 
 
-	String data[][]={ {"101","Amit","670000"},    
-			{"102","Jai","780000"},    
-			{"101","Sachin","700000"}};
+	static String[][] data=new String[50][3];
+	
 	
 	String column[]={"Oferta","NºDemandantes Asignados","Fecha Fin"}; 
-	
-	JTable jt=new JTable(data,column);
-
-	//	JScrollPane scrollPane = new JScrollPane(table);
 
 
 	JButton btnAceptar=new JButton ("Aceptar");
@@ -34,6 +29,10 @@ public class ConsultaOfertasV extends JFrame
 	public ConsultaOfertasV() {
 		setTitle ("Consulta Ofertas");
 		setSize(500,250);
+		
+
+		
+		JTable jt=new JTable(data,column);
 
 		pnlCent.setLayout(new GridLayout(1,1));
 		jt.setBounds(30,40,200,300);
@@ -49,11 +48,6 @@ public class ConsultaOfertasV extends JFrame
 
 		setLocationRelativeTo(null);
 		setLocation(480, 200);
-		setVisible(true);
-	}
-	public static void main(String[] args)
-	{
-		new ConsultaOfertasV();
 	}
 
 }

@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class AltaAsignacion extends JFrame
+public class AltaAsignacionV extends JFrame
 {
 	private static final long serialVersionUID = 1L;
 	
@@ -26,7 +26,7 @@ public class AltaAsignacion extends JFrame
 	JPanel pnlSup =new JPanel();
 	JPanel pnlInf =new JPanel();
 	
-	public AltaAsignacion(){
+	public AltaAsignacionV(){
 		setTitle ("Edición Oferta");
 		setSize(300,200);
 		//setVisible(true);
@@ -36,7 +36,7 @@ public class AltaAsignacion extends JFrame
 		lblFecha.setHorizontalAlignment(0);
 		JPanel pnlSupSup =new JPanel();
 		pnlSupSup.add(txtFecha);
-		txtFecha.setText("DD/MM/AAAA");
+		txtFecha.setText("AAAA-MM-DD");
 		pnlSup.add(pnlSupSup);
 		
 		pnlSup.add(lblFechaFin);
@@ -60,11 +60,6 @@ public class AltaAsignacion extends JFrame
 		
 		setLocationRelativeTo(null);
 		setLocation(480, 200);
-		setVisible(true);
+//		setVisible(true);
 	}
-	public static void main(String[] args)
-	{
-		new AltaAsignacion();
-	}
-
 }

@@ -14,7 +14,7 @@ public class EdicionOfertaV extends JFrame
 	private static final long serialVersionUID = 1L;
 	
 	JLabel lblOferta = new JLabel("Oferta:");
-	JLabel lblResOferta = new JLabel("15");
+	JLabel lblResOferta = new JLabel("");
 	JLabel lblFecha = new JLabel("Fecha:");
 	JTextField txtFecha = new JTextField(10);
 	JLabel lblFechaFin = new JLabel("Fecha Fin:");

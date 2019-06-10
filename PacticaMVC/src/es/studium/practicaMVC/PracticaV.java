@@ -43,10 +43,6 @@ public class PracticaV extends JFrame
 			setSize(250,200);
 			setVisible(true);
 		}
-			public static void main(String[] args)
-			{
-				new PracticaV();
-			}	
 			
 
 }

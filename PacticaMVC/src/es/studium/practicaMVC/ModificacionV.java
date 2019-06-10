@@ -12,7 +12,7 @@ public class ModificacionV extends JFrame
 {
 	private static final long serialVersionUID = 1L;
 
-	JLabel lblCliente=new JLabel("Dar de Baja Demandante:");
+	JLabel lblCliente=new JLabel("Modificación Oferta:");
 	static Choice choCliente=new Choice();
 
 	JButton btnEditar=new JButton("Editar");
@@ -41,10 +41,7 @@ public class ModificacionV extends JFrame
 		setLocationRelativeTo(null);
 		setLocation(480, 200);
 
-		setVisible(true);
+//		setVisible(true);
 	}
-	public static void main(String[] args)
-	{
-		new ModificacionV();
-	}
+	
 }
